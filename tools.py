@@ -14,7 +14,7 @@ def exch():
     result = " USD/UAH " + data[2][7:] + " Δ" + str(delta)
     return result
 
-def wether():
+def weather():
     try:
         import tokenbot
         res = requests.get("http://api.openweathermap.org/data/2.5/weather?q=Kiev,ua&units=metric", params={'APPID': tokenbot.weather})
